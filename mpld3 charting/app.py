@@ -34,6 +34,7 @@ save(p, file_path)
 ###################################################################
 # example here https://github.com/bokeh/bokeh/blob/1.0.4/examples/embed/json_item.py
 # https://www.fullstackpython.com/blog/responsive-bar-charts-bokeh-flask-python-3.html
+# http://hplgit.github.io/web4sciapps/doc/pub/._web4sa_flask013.html
 from bokeh.plotting import figure
 from bokeh.resources import CDN
 from bokeh.embed import components
