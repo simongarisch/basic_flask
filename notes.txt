@@ -1,0 +1,9 @@
+We can collect a flask template with...
+https://github.com/sloria/cookiecutter-flask
+
+$ pip install cookiecutter
+$ cookiecutter https://github.com/sloria/cookiecutter-flask.git
+
+
+For freezing our apps into static files
+https://pythonhosted.org/Frozen-Flask/
