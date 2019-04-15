@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--  jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Charting and tables</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center mt-5">
+      <h1 class="display-4 text-primary">Charting and tables</h1>
+    </div>
+
+    <div class="container">
+      <h2 class="display-5 text-secondary">{{chart_name}}</h2>
+      <img class="rounded mx-auto d-block" src={{chart_path}} alt="Chart">
+    </div>
+
+    <div class="container">
+      <h2 class="display-5 text-secondary">And the table</h2>
+      {% for table in tables %}
+        {{titles[loop.index]}}
+        {{ table|safe }}
+      {% endfor %}
+    </div>
+  </div>
+  
+  <hr>
+</body>
+
+</html>
