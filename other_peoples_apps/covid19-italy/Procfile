@@ -1,0 +1,1 @@
+web: PORT=8501 streamlit run --server.enableCORS false --server.port $PORT src/COVID-19-Italy.py
